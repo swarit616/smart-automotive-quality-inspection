@@ -1,0 +1,52 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Node / frontend
+node_modules/
+frontend/dist/
+dist/
+build/
+
+# Environment and secrets
+.env*
+!.env.example
+
+# Local data and databases
+data/*
+!data/.gitkeep
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite-*
+
+# Model weights and exports
+models/*
+!models/README.md
+*.pt
+*.onnx
+*.engine
+*.weights
+backend/yolov8n.pt
+
+# Training outputs
+runs/
+outputs/
+artifacts/
+
+# Logs and coverage
+*.log
+.coverage
+.coverage.*
+coverage/
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,11 @@
+# Runtime dependencies (inference via ONNX Runtime; .pt weights additionally need requirements-train.txt)
+# Pins were chosen from known-compatible releases for Python 3.11/3.12. They could NOT be resolved or installed in the
+# offline build sandbox; CI (.github/workflows/ci.yml) is the first place they get installed together.
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+pydantic==2.10.3
+python-multipart==0.0.20
+sqlalchemy==2.0.36
+numpy==1.26.4
+opencv-python-headless==4.10.0.84
+onnxruntime==1.20.1

@@ -1,0 +1,159 @@
+{
+ "n_images": 180,
+ "n_gt_instances": 409,
+ "conf_threshold": 0.25,
+ "precision": 0.4788,
+ "recall": 0.5257,
+ "f1": 0.5012,
+ "map50": 0.4329,
+ "map50_95": 0.1714,
+ "per_class": {
+  "crazing": {
+   "gt_instances": 64,
+   "tp": 3,
+   "fp": 6,
+   "fn": 61,
+   "precision": 0.3333,
+   "recall": 0.0469,
+   "f1": 0.0822,
+   "ap50": 0.2052,
+   "ap50_95": 0.0594
+  },
+  "inclusion": {
+   "gt_instances": 100,
+   "tp": 67,
+   "fp": 71,
+   "fn": 33,
+   "precision": 0.4855,
+   "recall": 0.67,
+   "f1": 0.563,
+   "ap50": 0.5255,
+   "ap50_95": 0.2273
+  },
+  "patches": {
+   "gt_instances": 82,
+   "tp": 68,
+   "fp": 34,
+   "fn": 14,
+   "precision": 0.6667,
+   "recall": 0.8293,
+   "f1": 0.7391,
+   "ap50": 0.8165,
+   "ap50_95": 0.4539
+  },
+  "pitted_surface": {
+   "gt_instances": 45,
+   "tp": 4,
+   "fp": 27,
+   "fn": 41,
+   "precision": 0.129,
+   "recall": 0.0889,
+   "f1": 0.1053,
+   "ap50": 0.0418,
+   "ap50_95": 0.0069
+  },
+  "rolled-in_scale": {
+   "gt_instances": 61,
+   "tp": 33,
+   "fp": 39,
+   "fn": 28,
+   "precision": 0.4583,
+   "recall": 0.541,
+   "f1": 0.4962,
+   "ap50": 0.4425,
+   "ap50_95": 0.1573
+  },
+  "scratches": {
+   "gt_instances": 57,
+   "tp": 40,
+   "fp": 57,
+   "fn": 17,
+   "precision": 0.4124,
+   "recall": 0.7018,
+   "f1": 0.5195,
+   "ap50": 0.5659,
+   "ap50_95": 0.1235
+  }
+ },
+ "confusion_matrix": [
+  [
+   3,
+   0,
+   0,
+   0,
+   0,
+   0,
+   61
+  ],
+  [
+   0,
+   67,
+   2,
+   0,
+   0,
+   0,
+   31
+  ],
+  [
+   0,
+   0,
+   68,
+   0,
+   0,
+   0,
+   14
+  ],
+  [
+   0,
+   1,
+   0,
+   4,
+   0,
+   0,
+   40
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   33,
+   0,
+   28
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   0,
+   40,
+   17
+  ],
+  [
+   6,
+   70,
+   32,
+   27,
+   39,
+   57,
+   0
+  ]
+ ],
+ "confusion_matrix_labels": [
+  "crazing",
+  "inclusion",
+  "patches",
+  "pitted_surface",
+  "rolled-in_scale",
+  "scratches",
+  "background"
+ ],
+ "dataset": "..\\data\\datasets\\neu-det",
+ "split": "test",
+ "iou_nms": 0.45,
+ "synthetic_dataset": false,
+ "generated_at": "2026-11-09T08:44:54.449320+00:00",
+ "weights": "..\\models\\best.pt",
+ "weights_version": "f4e55e8f9263"
+}

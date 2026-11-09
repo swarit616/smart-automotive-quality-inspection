@@ -1,0 +1,21 @@
+server {
+    listen 80;
+    server_name _;
+    root /usr/share/nginx/html;
+    index index.html;
+    client_max_body_size 12m;
+
+    # The browser never sees the API key: the proxy adds it to every upstream request.
+    location /api/ {
+        proxy_pass ${BACKEND_URL};
+        proxy_set_header X-API-Key "${API_KEY}";
+        proxy_set_header Host $host;
+        proxy_read_timeout 60s;
+    }
+    location = /health {
+        proxy_pass ${BACKEND_URL}/health;
+    }
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+}

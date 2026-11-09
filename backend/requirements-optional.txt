@@ -1,0 +1,3 @@
+# Optional integrations
+pymodbus==3.7.4          # alternative Modbus transport (PyModbusAdapter in app/plc/client.py)
+psycopg[binary]==3.2.3   # PostgreSQL driver: DATABASE_URL=postgresql+psycopg://user:pass@host/db

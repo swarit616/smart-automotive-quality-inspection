@@ -1,0 +1,6 @@
+# Training / fine-tuning / .pt inference. Ultralytics (YOLOv8) is licensed AGPL-3.0 - see docs/MODEL_TRAINING.md.
+-r requirements.txt
+ultralytics==8.3.50
+torch==2.5.1
+torchvision==0.20.1
+matplotlib==3.9.3
